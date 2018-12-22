@@ -1,0 +1,7 @@
+@function column-width($gutter-horizontal, $num_of_columns){
+      @return subtract-gutter($gutter-horizontal) / #{$num_of_columns};
+}
+
+@function subtract-gutter($gutter) {
+    @return 100% - #{$gutter};
+}
