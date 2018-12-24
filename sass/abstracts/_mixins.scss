@@ -5,3 +5,35 @@
         clear: both;
     }
 }
+
+@mixin gradient-background-primary ($image) {
+  background-image: linear-gradient(to right bottom,
+    rgba($color-primary-light, 0.8), rgba($color-primary-dark, 0.8)),
+    url($image);
+    background-size: cover;
+}
+@mixin gradient-background-secondary ($image) {
+  background-image: linear-gradient(to right bottom,
+    rgba($color-secondary, 0.8), rgba($color-secondary-light, 0.8)),
+    url($image);
+    background-size: cover;
+}
+@mixin gradient-background-tertiary ($image) {
+  background-image: linear-gradient(to right bottom,
+    rgba($color-tertiary, 0.8), rgba($color-tertiary-light, 0.8)),
+    url($image);
+    background-size: cover;
+}
+@mixin gradient-background ($image, $light, $dark) {
+      background-image: linear-gradient(to right bottom,
+    rgba($light, 0.8), rgba($dark, 0.8)),
+    url($image);
+    background-size: cover;
+    
+}
+@mixin gradient-text {
+    background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;  
+}
