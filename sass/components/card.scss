@@ -42,7 +42,7 @@
     &__image {
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
         clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); 
-        background-blend-mode: screen;
+        background-blend-mode: hard-light;
         height: 23rem;
         &--primary {
             @include gradient-background-primary("../img/nat-5.jpg");

@@ -4,7 +4,7 @@
     position: relative;
     box-shadow: 0 3rem 6rem rgba($color-black, .2);
     background: $color-white;
-    border-radius: 3px;
+    border-radius: $border-radius-default;
     padding: 6rem 6rem 15rem 6rem;
     padding-left: 9rem;
     font-size: $default-font-size;

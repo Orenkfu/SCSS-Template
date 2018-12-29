@@ -32,8 +32,14 @@
     
 }
 @mixin gradient-text {
-    background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+    background-image: linear-gradient(to right, $color-black, $color-black);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;  
+}
+@mixin absolute-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }

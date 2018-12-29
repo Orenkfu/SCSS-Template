@@ -6,13 +6,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="sass/icon-font.css">
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link rel="stylesheet" href="sass/style.css">
-    <title>Nature Tours</title>
+    <title>Fixel AI</title>
 </head>
 
 <body>
+    <div class="navigation">
+        <input type="checkbox" id="navi-toggle" class="navigation__checkbox">
+        <label for="navi-toggle" class="navigation__button">
+            <span class="navigation__icon">
+                &nbsp;
+            </span>
+        </label>
+        <div class="navigation__background">&nbsp;</div>
+        <nav class="navigation__nav">
+            <ul class="navigation__list">
+                <li class="navigation__item">
+                    <a href="#" class="navigation__link">
+                        <span>01</span>About Fixel</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="#" class="navigation__link">
+                        <span>02</span>Case Studies</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="#" class="navigation__link">
+                        <span>03</span>Prices</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="#" class="navigation__link">
+                        <span>04</span>Docs</a>
+                </li>
+                <li class="navigation__item">
 
+                    <a href="#" class="navigation__link">
+                        <span>05</span> Start Your Trial</a>
+                </li>
+
+
+
+            </ul>
+        </nav>
+
+    </div>
     <header class="header">
         <div class="header__logo-box">
             <img src="./img/logo-white.png" alt="Logo" class="header__logo">
@@ -20,26 +58,26 @@
         <div class="header__text-box">
             <h1 class="heading-primary">
                 <span class="heading-primary--main">
-                    Nature
+                    Fixel
                 </span>
                 <span class="heading-primary--sub">
-                    A Better life
+                    Better Segmentation
                 </span>
             </h1>
-            <a href="#" class="btn btn--white btn--animated">Discover Our Tours</a>
+            <a href="#" class="btn btn--white btn--animated">Start Your Trial</a>
         </div>
     </header>
     <main>
         <section class="section-about">
             <div class="u-center-text">
                 <h2 class="heading-secondary u-mb-8">
-                    Exciting tours for adventourous people
+                    Powerful AI-Segmented Audiences Across Ad Platforms
                 </h2>
             </div>
             <div class="row">
                 <div class="col-1-of-2">
                     <h3 class="heading-tertiary u-mb-3">
-                        You're going to fall in love with nature
+                        Some visitors are worth more than others...
                     </h3>
                     <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam harum fugiat ad ut reprehenderit iure
                         iste illum consequatur, quisquam sed amet praesentium! Officia dolorum fugiat deserunt adipisci quae
@@ -111,7 +149,7 @@
         </section>
         <section class="section-tours">
             <div class="u-center-text">
-                <h2 class="heading-secondary u-mb-8">
+                <h2 class="heading-secondary u-mt-4 u-mb-8">
                     Most popular tours
                 </h2>
                 <div class="row">
@@ -215,16 +253,18 @@
             </div>
         </section>
         <section class="section-stories">
-            <div class="bg-video">
-                <video class="bg-video__content" autoplay muted loop>
-                    <source src="img/video.mp4" type="video/mp4"> </source>
-                    <source src="img/video/webm" type="video/webm"> </source>
-                    Your browser is not supported. cannot play video.
-                </video>
 
-            </div>
 
             <div class="u-center-text">
+                <!--
+                    <div class="bg-video">
+                        <video class="bg-video__content" autoplay muted loop>
+                            <source src="img/video.mp4" type="video/mp4"> </source>
+                            <source src="img/video/webm" type="video/webm"> </source>
+                            Your browser is not supported. cannot play video.
+                        </video>
+                    </div>
+                    -->
                 <h2 class="heading-secondary u-mb-7">
                     We make people genuinely happy
                 </h2>
@@ -285,6 +325,47 @@
                 </div>
             </div>
 
+        </section>
+
+        <section class="section-booking">
+            <div class="row">
+                <div class="book">
+                    <div class="book__form">
+                        <form action="#" class="form">
+                            <div class="form__group">
+                                <div class="u-mb-3">
+                                    <h2 class="heading-secondary">
+                                        Start Booking Now
+                                    </h2>
+                                </div>
+                                <input id="name" type="text" class="form__input" placeholder="Full Name" required>
+                                <label for="name" class="form__label">Full name</label>
+                            </div>
+                            <div class="form__group">
+                                <input id="email" type="email" class="form__input" placeholder="Email Address" required>
+                                <label for="email" class="form__label">Email Address</label>
+                            </div>
+                            <div class="form__group">
+                                <div class="form__radio-group">
+                                    <input type="radio" id="small" name="size" class="form__radio-input">
+                                    <label for="small" class="form__radio-label"></label>
+                                    <span class="form__input-button">
+                                        Small Tour Group
+                                    </span>
+                                </div>
+                                <div class="form__radio-group">
+                                    <input type="radio" id="large" name="size" class="form__radio-input">
+                                    <label for="large" class="form__radio-label"></label>
+                                    <span class="form__radio-button">
+                                        Large Tour Group
+                                    </span>
+                                </div>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 

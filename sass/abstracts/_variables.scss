@@ -1,17 +1,31 @@
-
+/*
 $color-primary: #55c57a;
 $color-primary-dark: #28b485;
 $color-primary-light: #7ed56f;
-
+*/
+$color-primary: #f1c232;
+$color-primary-dark: darken($color-primary, 15);
+$color-primary-light: lighten($color-primary, 15);
+/*
 $color-secondary: #ffb900;
+$color-secondary-dark: darken($color-secondary, 15);
 $color-secondary-light: #ff7730;
+*/
+$color-secondary: #4e598c;
+$color-secondary-dark: darken(#4e598c, 15);
+$color-secondary-light: lighten(#4e598c, 15);
 
+$color-tertiary: #55c57a;
+$color-tertiary-light: #7ed56f;
+
+/*
 $color-tertiary: #2998ff;
 $color-tertiary-light: #5632fa;
-
+*/
 
 
 $color-grey-dark: #777;
+$color-grey-dark-2: #333;
 $color-white: #fff;
 $color-black: #000;
 $color-grey-light-1: #f7f7f7;
@@ -21,6 +35,7 @@ $grid-width: 114rem;
 $gutter-vertical: 8rem;
 $gutter-horizontal: 6rem;
 
+$border-radius-default: 3px;
 
 //font
 $default-font-size: 1.6rem;

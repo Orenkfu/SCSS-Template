@@ -20,15 +20,15 @@ body {
 
 
 .heading-primary {
-    color: $color-white; 
+    color: $color-black; 
     text-transform: uppercase;
     backface-visibility: hidden;
     &--main {
     display: block;
-    font-size: 5rem;
+    font-size: 7rem;
     font-weight: 400;
     padding-left: 1rem;
-    letter-spacing: 3.1rem;
+    letter-spacing: 4.1rem;
     animation-name: moveInLeft;
     animation-duration: 4s;
     }
@@ -51,7 +51,7 @@ body {
     letter-spacing: 2px;
     transition: all .2s;
     &:hover {
-        transform: skewY(-10deg);
+        //transform: skewY(-10deg);
     }
 }
 
