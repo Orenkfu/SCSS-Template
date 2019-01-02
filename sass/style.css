@@ -227,7 +227,7 @@ body {
     color: #777; }
   .btn--green {
     background-color: #f1c232;
-    color: #fff; }
+    color: #000; }
   .btn--animated {
     animation: moveInBottom .5s ease-out .75s;
     animation-fill-mode: backwards; }
@@ -527,6 +527,83 @@ body {
       opacity: 0; }
       .form__radio-button::after:hover {
         opacity: 1; }
+
+/*
+$color-primary: #55c57a;
+$color-primary-dark: #28b485;
+$color-primary-light: #7ed56f;
+*/
+/*
+$color-secondary: #ffb900;
+$color-secondary-dark: darken($color-secondary, 15);
+$color-secondary-light: #ff7730;
+*/
+/*
+$color-tertiary: #2998ff;
+$color-tertiary-light: #5632fa;
+*/
+.popup {
+  z-index: 9;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #000;
+  font-size: 1.5rem;
+  padding: 0;
+  margin: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 1s .2s; }
+  .popup:target {
+    visibility: visible;
+    opacity: 1; }
+  .popup:target .popup__content {
+    transform: translate(-50%, -50%) scale(1); }
+  .popup__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 3px;
+    transform: translate(-50%, -50%) scale(0.1);
+    width: 75%;
+    background-color: #fff;
+    box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
+    display: table;
+    overflow: hidden;
+    transition: all .5s .2s; }
+    .popup__content__left {
+      width: 33.33333%;
+      display: table-cell; }
+      .popup__content__left__image {
+        display: block;
+        width: 100%;
+        background-size: contain; }
+    .popup__content__right {
+      padding: 3rem 5rem;
+      display: table-cell;
+      vertical-align: middle;
+      width: 66.6666667%; }
+      .popup__content__right__close:link, .popup__content__right__close:visited {
+        position: absolute;
+        color: #777;
+        top: 1.5rem;
+        right: 2.5rem;
+        font-size: 3rem;
+        text-decoration: none;
+        display: inline-block;
+        transition: all .2s;
+        line-height: 1; }
+    .popup__content__text {
+      font-size: 1.7rem;
+      margin-bottom: 4rem;
+      padding: 2rem 0;
+      column-count: 2;
+      column-gap: 4rem;
+      hyphens: auto; }
 
 .header {
   height: 95vh;
